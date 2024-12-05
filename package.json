@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-        "test": "mocha "
+        "test": "mocha"
     },
     "keywords": [],
     "author": "",
@@ -15,7 +15,7 @@
         "selenium-webdriver": "^4.27.0"
     },
     "devDependencies": {
-        "chromedriver": "^131.0.1",
+        "chromedriver": "^131.0.2",
         "mocha": "^10.7.3",
         "webdriver-manager": "^12.1.9"
     }

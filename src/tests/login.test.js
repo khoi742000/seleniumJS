@@ -1,16 +1,15 @@
+const { it } = require('node:test');
 const LoginPage = require('../pages/login.page');
-const driver = require('../utils/driver')
+const driverChrome = require('../utils/driver');
 
 describe('Login Tests', () => {
     let driver;
-    let loginPage;
+    let login
 
     before(async() => {
         driver = new driverChrome();
-        console.log('cc')
-        loginPage = new LoginPage();
-        await loginPage.open();
-        await loginPage.focusSelector()
+        login = new LoginPage();
+
     });
 
     after(async() => {
@@ -18,6 +17,11 @@ describe('Login Tests', () => {
             await driver.quit();
         }
     });
+
+    it('login ne', () => {
+        login.LoginPage()
+
+    })
 
 
 });
